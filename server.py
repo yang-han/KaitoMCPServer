@@ -1,5 +1,9 @@
 # server.py
+from dotenv import load_dotenv
 from mcp.server.fastmcp import FastMCP
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Create an MCP server
 mcp = FastMCP("Demo")
