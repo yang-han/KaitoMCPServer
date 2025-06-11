@@ -47,6 +47,25 @@ To run the MCP server:
 uv run python main.py
 ```
 
+To test the server functionality:
+
+```bash
+# Simple direct testing (recommended for development)
+uv run python simple_client.py
+
+# Full MCP protocol client (requires server to be running separately)
+uv run python client.py
+```
+
+### Testing
+
+The project includes two client scripts for testing:
+
+1. **`simple_client.py`** - Direct testing by importing server functions
+2. **`client.py`** - Full MCP protocol client that communicates with a running server
+
+For quick testing and development, use `simple_client.py`. For testing the actual MCP protocol implementation, run the server with `main.py` and then use `client.py` in a separate terminal.
+
 ### Development
 
 To activate the virtual environment for development:
